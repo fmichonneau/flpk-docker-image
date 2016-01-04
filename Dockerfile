@@ -1,6 +1,6 @@
 ## Emacs, make this -*- mode: sh; -*-
 
-## Modified from rocker/shiny
+## Modified from rocker/shiny -- for florida plankton shiny app
 
 FROM r-base:latest
 
@@ -38,4 +38,3 @@ EXPOSE 3838
 COPY shiny-server.sh /usr/bin/shiny-server.sh
 
 CMD ["/usr/bin/shiny-server.sh"]
-
