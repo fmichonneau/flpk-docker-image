@@ -29,6 +29,8 @@ RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubu
 
 RUN R -e "install.packages(c('shiny', 'rmarkdown', 'leaflet'), repos='https://cran.rstudio.com/')"
 
+RUN R -e "devtools::install_github('fmichonneau/chopper')"
+
 RUN R -e "devtools::install_github('fmichonneau/labmanager')"
 
 RUN cp -R /usr/local/lib/R/site-library/shiny/examples/* /srv/shiny-server/
