@@ -2,7 +2,7 @@
 
 ## Modified from rocker/shiny -- for florida plankton shiny app
 
-FROM rocker/hadleyverse:latest
+FROM r-base:latest
 
 MAINTAINER Francois Michonneau "francois.michonneau@gmail.com"
 
